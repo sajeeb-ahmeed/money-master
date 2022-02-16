@@ -22,7 +22,7 @@
             </div>
 
         </header>
-        <main class="container bg-color rounded p-3 mt-5">
+        <main class="container bg-color rounded p-3 py-5 mt-5">
             <section class="row g-4">
                 <div class="col-md-6">
                     <img class="img-fluid object-fit" src="image/save.jpg" alt="saveings">
@@ -33,26 +33,42 @@
                         <h3 class="primary-color fw-bold pb-3">Income</h3>
 
                         <label for="income-input">income : </label>
-                        <input id="income-input" class="border-1 rounded" type="text">
+                        <input id="income-input" class="border-1 rounded" type="number">
 
                         <h3 class="primary-color fw-bold p-3">Expense</h3>
 
-                        <label for="income-input">Food : </label>
-                        <input id="food-input" class="border-1 rounded" type="text"> <br> <br>
+                        <label for="food-input">Food : </label>
+                        <input id="food-input" class="border-1 rounded" type="number"> <br> <br>
 
-                        <label for="income-input">Rent : </label>
-                        <input id="rent-input" class="border-1 rounded" type="text"> <br> <br>
+                        <label for="rent-input">Rent : </label>
+                        <input id="rent-input" class="border-1 rounded" type="number"> <br> <br>
 
-                        <label for="income-input">Clothes : </label>
-                        <input id="clothes-input" class="border-1 rounded" type="text">
+                        <label for="clothes-input">Cloths:</label>
+                        <input id="clothes-input" class="border-1 rounded" type="number"> <br> <br>
+
+                        <h4 role="button" onclick="calculate()" class="btn btn-outline-success fw-bold px-4 "> Calculate
+                        </h4>
+                        <h3 class="primary-color fw-bold p-3">Total Expense : <span id="total-expense">00</span></h3>
+                        <h3 class="primary-color fw-bold pb-3">Balance : <span id="balance">00</span></h3>
+
+                        <label for="save">Save : </label>
+                        <input id="save" class="border-1 rounded" type="number"> <span class="fw-bolder mx-4"> % </span>
+                        <button id="save-btn" class="btn btn-outline-info px-5">Save</button>
+
+                        <h5 class="primary-color fw-bold p-3">Saveings Amount : <span id="saveings-amount">00</span>
+                        </h5>
+                        <h5 class="primary-color fw-bold ">Remaing Balance : <span id="remaing-balance">00</span>
+                        </h5>
 
                     </div>
                 </div>
             </section>
-            <footer>
 
-            </footer>
+
         </main>
+        <footer class="container text-center bg-black text-info">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </footer>
     </div>
 
     <!-- link script tag  -->
