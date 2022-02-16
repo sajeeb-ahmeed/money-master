@@ -6,9 +6,10 @@
 
 :root {
     --primary-color: #062f4b;
-    --bg-color: #95acc9;
-    --body-color: #b1e7f8;
+    --bg-color: #e3e5e9;
+    --body-color: #ffffff;
     --footer-color: #252525;
+    --secondary: rgb(45, 57, 219);
     --gray: rgb(192, 191, 191);
 
 }
@@ -24,6 +25,11 @@ body {
     color: var(--primary-color) !important;
 }
 
+.secondary {
+    color: var(--secondary);
+    font-weight: 900;
+}
+
 .bg-color {
     background-color: var(--bg-color);
 }
@@ -34,4 +40,8 @@ body {
 
 .footer-color {
     background-color: var(--footer-color);
+}
+
+.object-fit {
+    object-fit: cover;
 }
