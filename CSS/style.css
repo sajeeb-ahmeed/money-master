@@ -6,8 +6,8 @@
 
 :root {
     --primary-color: #062f4b;
-    --bg-color: #e3e5e9;
-    --body-color: #ffffff;
+    --bg-color: #058B96;
+    --body-color: #b1ebfdaf;
     --footer-color: #252525;
     --secondary: rgb(45, 57, 219);
     --gray: rgb(192, 191, 191);
@@ -35,7 +35,10 @@ body {
 }
 
 .gray {
-    color: var(--gray);
+    background-color: var(--gray);
+    color: rgb(34, 34, 34);
+    padding: 7px 12px;
+    font-weight: 700;
 }
 
 .footer-color {
@@ -46,14 +49,16 @@ body {
     object-fit: cover;
 }
 
+
+
 .toast-message {
     position: fixed;
     z-index: 999;
     top: 5rem;
     right: 10rem;
     font-weight: 600;
-    background-color: rgb(251, 83, 41);
-    color: rgb(255, 255, 255);
+    background-color: rgba(192, 189, 189, 0.705);
+    color: rgb(28, 60, 102);
     border: 1px solid #fff;
     border-radius: 0.25rem;
     padding: 2rem 5rem;
