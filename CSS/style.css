@@ -49,8 +49,7 @@ body {
     object-fit: cover;
 }
 
-
-
+/* popup alert msg  */
 .toast-message {
     position: fixed;
     z-index: 999;

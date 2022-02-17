@@ -20,8 +20,8 @@ function generateToastMessage(msg) {
     document.body.appendChild(div);
 }
 
-//common function
-const getInput = (identity) => {
+
+function getInput(identity) {
     if (!identity || typeof identity !== 'string') return false;
 
     // get the element
@@ -32,13 +32,12 @@ const getInput = (identity) => {
         const errFeedback = document.querySelector(`.invalid-feedback[data-target='${identity}']`);
 
         if (errFeedback) {
-            errFeedback.innerText = 'please enter a valid number';
+            errFeedback.innerText = 'please enter a valid number'
             if (div !== null) {
                 div.remove();
                 div = null;
                 return generateToastMessage(`Please input valid amount of Iccome in number format `);
             }
-
         }
 
         element.classList.add('is-invalid')
@@ -48,4 +47,3 @@ const getInput = (identity) => {
     element.classList.remove('is-invalid')
     return elementData;
 }
-//calculation cost

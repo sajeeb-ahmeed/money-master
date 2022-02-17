@@ -15,6 +15,8 @@
 <body>
     <!-- let's stats  -->
     <div class="container-fulid">
+
+        <!-- header section  -->
         <header class="container mt-5 p-3 bg-body ">
             <div class="d-flex text-center justify-content-center align-items-center">
                 <h1 class="text-center fw-bolder pt-2 secondary">Online Transactions </h1>
@@ -22,11 +24,15 @@
             </div>
 
         </header>
+        <!-- header end  -->
+        <!-- main  -->
         <main class="container bg-color rounded p-5  mt-5">
+            <!-- left content  -->
             <section class="row g-4">
                 <div class="col-md-6">
                     <img class="img-fluid w-100 object-fit rounded-1" src="image/gbitcoin.jpg" alt="saveings">
                 </div>
+                <!-- right content  -->
                 <div class="col-md-6">
                     <div class="text-center">
 
@@ -44,23 +50,26 @@
                             <input type="number" id="food" class="form-control" />
                             <p class="invalid-feedback" data-target="#food"></p>
                         </div>
+                        <!-- rent  -->
                         <div class="from-group mb-3">
                             <label for="rent" class="form-label"> Rent </label>
                             <input type="number" id="rent" class="form-control" />
                             <p class="invalid-feedback" data-target="#rent"></p>
                         </div>
+                        <!-- clothes  -->
                         <div class="from-group">
                             <label for="clothes" class="form-label"> Clothes </label>
                             <input type="number" id="clothes" class="form-control" />
                             <p class="invalid-feedback" data-target="#clothes"></p>
                         </div>
-
+                        <!-- calculate button  -->
                         <button class="btn btn-primary mt-5" onclick="geExpenses()">Calculate</button>
 
                         <h6 class="mb-3 mt-5">Total Expenses: <font id="expenses">00</font>
                             </h5>
                             <h6 class="mb-5">Balance: <font id="balance">00</font>
                                 </h5>
+
 
                                 <div class="from-group mb-3">
                                     <label for="save" class="form-label"> Save </label>
@@ -72,6 +81,7 @@
                                         <div class="col-1">
                                             <b>%</b>
                                         </div>
+                                        <!-- save button    -->
                                         <div class="col-5">
                                             <button class="btn btn-success" onclick="calcSavings()">
                                                 Save
@@ -89,12 +99,13 @@
                     </div>
                 </div>
             </section>
-
-
         </main>
+        <!-- main end  -->
+
         <footer class="container text-center footer-color fw-bold text-info p-4 ">
             <p class="text-secondary"> Hard work || Perseverance || Determination</p>
         </footer>
+        <!-- footer end  -->
     </div>
 
     <!-- link script tag  -->
