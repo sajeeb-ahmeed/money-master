@@ -47,3 +47,31 @@ function getInput(identity) {
     element.classList.remove('is-invalid')
     return elementData;
 }
+
+function geExpenses() {
+    // get expense 
+    const totalExpenses = document.getElementById('expenses');
+    const balance = document.getElementById('balance');
+
+    totalExpenses.innerText = '00';
+    balance.innerText = '00';
+
+    const food = getInput('#food');
+    const rent = getInput('#rent');
+    const clothes = getInput('#clothes');
+
+    const income = getInput('#income');
+
+    if (food === false || rent === false || clothes === false || income === false) return;
+
+    if (food + rent + clothes > income) {
+        let totalExpenses = parseFloat(food + rent + clothes)
+        let sortMoney = totalExpenses - income;
+        return generateToastMessage(` বেটা খরচের হাত কমাও 🥺 এই টাকা খরচ করতে হলে তোমাকে আরো ${sortMoney}  টাকা কামাই করা লাগবে 😏`);
+    }
+
+    totalExpenses.innerText = food + rent + clothes;
+    balance.innerText = income - (food + rent + clothes);
+
+
+}
