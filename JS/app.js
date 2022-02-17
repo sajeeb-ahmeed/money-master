@@ -20,7 +20,6 @@ function generateToastMessage(msg) {
     document.body.appendChild(div);
 }
 
-
 function getInput(identity) {
     if (!identity || typeof identity !== 'string') return false;
 

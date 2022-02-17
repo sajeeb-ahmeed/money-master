@@ -72,7 +72,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 .toast-message-slide-in {
     animation: toast-animation-in 0.5s ease-in;
 }
