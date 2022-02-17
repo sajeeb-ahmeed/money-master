@@ -30,36 +30,61 @@
                 <div class="col-md-6">
                     <div class="text-center">
 
-                        <h3 class="primary-color fw-bold pb-3">Income</h3>
+                        <h5 class="mb-2">Income</h5>
 
-                        <label for="income-input">income : </label>
-                        <input id="income-input" class="border-1 rounded gray" type="number">
+                        <div class="from-group mb-5">
+                            <input type="number" id="income" class="form-control" />
+                            <p class="invalid-feedback" data-target="#income"></p>
+                        </div>
 
-                        <h3 class="primary-color fw-bold p-3">Expense</h3>
+                        <h5 class="mb-4">Expenses</h5>
 
-                        <label for="food-input">Food : </label>
-                        <input id="food-input" class="border-1 rounded gray" type="number"> <br> <br>
+                        <div class="from-group mb-3">
+                            <label for="food" class="form-label"> Food </label>
+                            <input type="number" id="food" class="form-control" />
+                            <p class="invalid-feedback" data-target="#food"></p>
+                        </div>
+                        <div class="from-group mb-3">
+                            <label for="rent" class="form-label"> Rent </label>
+                            <input type="number" id="rent" class="form-control" />
+                            <p class="invalid-feedback" data-target="#rent"></p>
+                        </div>
+                        <div class="from-group">
+                            <label for="clothes" class="form-label"> Clothes </label>
+                            <input type="number" id="clothes" class="form-control" />
+                            <p class="invalid-feedback" data-target="#clothes"></p>
+                        </div>
 
-                        <label for="rent-input">Rent : </label>
-                        <input id="rent-input" class="border-1 rounded gray " type="number"> <br> <br>
+                        <button class="btn btn-primary mt-5" onclick="geExpenses()">Calculate</button>
 
-                        <label for="clothes-input">Cloths:</label>
-                        <input id="clothes-input" class="border-1 rounded gray" type="number"> <br> <br>
+                        <h6 class="mb-3 mt-5">Total Expenses: <font id="expenses">00</font>
+                            </h5>
+                            <h6 class="mb-5">Balance: <font id="balance">00</font>
+                                </h5>
 
-                        <h4 role="button" onclick="calculate()" class="btn btn-outline-info fw-bold px-4 "> Calculate
-                        </h4>
-                        <h3 class="primary-color fw-bold p-3">Total Expense : <span id="total-expense">00</span></h3>
-                        <h3 class="primary-color fw-bold pb-3">Balance : <span id="balance">00</span></h3>
+                                <div class="from-group mb-3">
+                                    <label for="save" class="form-label"> Save </label>
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <input type="number" id="save" class="form-control" />
+                                            <p class="invalid-feedback" data-target="#save"></p>
+                                        </div>
+                                        <div class="col-1">
+                                            <b>%</b>
+                                        </div>
+                                        <div class="col-5">
+                                            <button class="btn btn-success" onclick="calcSavings()">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
 
-                        <label for="save">Save : </label>
-                        <input id="save" class="border-1 rounded gray" type="number"> <span class="fw-bolder mx-4"> %
-                        </span>
-                        <button onclick="calcSavings()" id="save-btn" class="btn btn-outline-info px-5">Save</button>
+                                </div>
 
-                        <h5 class="primary-color fw-bold p-3">Saveings Amount : <span id="saveings-amount">00</span>
-                        </h5>
-                        <h5 class="primary-color fw-bold ">Remaing Balance : <span id="remaing-balance">00</span>
-                        </h5>
+                                <h6 class="mb-3 mt-5">Saving Amount: <font id="savings">00</font>
+                                </h6>
+                                <h5 class="mb-5">Remaining Balance: <font id="remaining-balance">00</font>
+                                </h5>
 
                     </div>
                 </div>
