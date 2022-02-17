@@ -39,7 +39,7 @@ function calculate() {
             div.remove();
             div = null;
         }
-        return generateToastMessage(`Please input valid amount of money in number format `);
+        return generateToastMessage(`Please input valid amount of Iccome in number format `);
     } else {
         let calcTotalExpense = parseFloat(food + rent + clothes);
         const expense = document.getElementById('total-expense');

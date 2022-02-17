@@ -22,10 +22,10 @@
             </div>
 
         </header>
-        <main class="container bg-color rounded p-3 py-5 mt-5">
+        <main class="container bg-color rounded p-5  mt-5">
             <section class="row g-4">
                 <div class="col-md-6">
-                    <img class="img-fluid object-fit rounded-1" src="image/gbitcoin.jpg" alt="saveings">
+                    <img class="img-fluid w-100 object-fit rounded-1" src="image/gbitcoin.jpg" alt="saveings">
                 </div>
                 <div class="col-md-6">
                     <div class="text-center">
@@ -46,7 +46,7 @@
                         <label for="clothes-input">Cloths:</label>
                         <input id="clothes-input" class="border-1 rounded gray" type="number"> <br> <br>
 
-                        <h4 role="button" onclick="calculate()" class="btn btn-outline-light fw-bold px-4 "> Calculate
+                        <h4 role="button" onclick="calculate()" class="btn btn-outline-info fw-bold px-4 "> Calculate
                         </h4>
                         <h3 class="primary-color fw-bold p-3">Total Expense : <span id="total-expense">00</span></h3>
                         <h3 class="primary-color fw-bold pb-3">Balance : <span id="balance">00</span></h3>
@@ -54,7 +54,7 @@
                         <label for="save">Save : </label>
                         <input id="save" class="border-1 rounded gray" type="number"> <span class="fw-bolder mx-4"> %
                         </span>
-                        <button id="save-btn" class="btn btn-outline-info px-5">Save</button>
+                        <button onclick="calcSavings()" id="save-btn" class="btn btn-outline-info px-5">Save</button>
 
                         <h5 class="primary-color fw-bold p-3">Saveings Amount : <span id="saveings-amount">00</span>
                         </h5>
@@ -67,8 +67,8 @@
 
 
         </main>
-        <footer class="container text-center bg-black text-info">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <footer class="container text-center footer-color fw-bold text-info p-4 ">
+            <p class="text-secondary"> Hard work || Perseverance || Determination</p>
         </footer>
     </div>
 

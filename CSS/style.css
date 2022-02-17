@@ -6,11 +6,11 @@
 
 :root {
     --primary-color: #062f4b;
-    --bg-color: #058B96;
+    --bg-color: #effcfd;
     --body-color: #b1ebfdaf;
-    --footer-color: #252525;
+    --footer-color: #292929;
     --secondary: rgb(45, 57, 219);
-    --gray: rgb(192, 191, 191);
+    --gray: rgb(207, 207, 207);
 
 }
 
