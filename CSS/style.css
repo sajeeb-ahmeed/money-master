@@ -10,7 +10,7 @@
     --body-color: #b1ebfdaf;
     --footer-color: #292929;
     --secondary: rgb(45, 57, 219);
-    --gray: rgb(207, 207, 207);
+    --gray: rgb(150, 211, 231);
 
 }
 
@@ -19,6 +19,7 @@
 body {
     font-family: 'Fjalla One', sans-serif;
     background-color: var(--body-color);
+    font-size: 20px !important;
 }
 
 .primary-color {
@@ -39,6 +40,7 @@ body {
     color: rgb(34, 34, 34);
     padding: 7px 12px;
     font-weight: 700;
+    text-align: center;
 }
 
 .footer-color {
@@ -49,6 +51,11 @@ body {
     object-fit: cover;
 }
 
+.form-label {
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
 /* popup alert msg  */
 .toast-message {
     position: fixed;
@@ -56,8 +63,8 @@ body {
     top: 5rem;
     right: 10rem;
     font-weight: 600;
-    background-color: rgba(192, 189, 189, 0.705);
-    color: rgb(28, 60, 102);
+    background-color: rgba(29, 65, 71, 0.404);
+    color: #000000;
     border: 1px solid #fff;
     border-radius: 0.25rem;
     padding: 2rem 5rem;

@@ -48,7 +48,7 @@ function getInput(identity) {
     return elementData;
 }
 
-function geExpenses() {
+function getExpenses() {
     // get expense 
     const totalExpenses = document.getElementById('expenses');
     const balance = document.getElementById('balance');
@@ -93,11 +93,15 @@ function calcSavings() {
     // check validatition
     if (saved > income) {
         const availableSavingPercent = Math.floor(
-            (income / save) * 2
+            (income / save) * 100
         );
         return generateToastMessage(`You cannot save more than ${availableSavingPercent} percent of your income`);
     }
     savings.innerText = saved;
     remainBalance.innerText = balanceData - saved;
+    if (remainBalance.innerText < 0) {
+        remainBalance.innerText = '00'
+        return generateToastMessage(`You cannot save  nagetive money, You Must Have to Add Money On Your Balance`);
+    }
 
 }
